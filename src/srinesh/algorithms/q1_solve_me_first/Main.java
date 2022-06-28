@@ -1,6 +1,3 @@
-# [Solve Me First](https://www.hackerrank.com/challenges/solve-me-first/problem)
-
-```java
 import java.io.*;
 
 public class Main {
@@ -17,4 +14,3 @@ public class Main {
     }
 
 }
-```
