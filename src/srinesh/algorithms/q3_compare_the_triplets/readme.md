@@ -9,13 +9,9 @@ public static List<Integer> compareTriplets(List<Integer> a, List<Integer> b) {
         var valA = a.get(i);
         var valB = b.get(i);
 
-        if(valA == valB)
-            continue;
-
         if(valA > valB)
             sumA++;
-            
-        else
+        else if(valA < valB)
             sumB++;
     }
 
