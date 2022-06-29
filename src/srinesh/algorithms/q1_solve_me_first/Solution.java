@@ -1,6 +1,6 @@
 import java.io.*;
 
-public class Main {
+public class Solution {
 
     public static void main(String[] args) throws IOException {
         var bufferedReader = new BufferedReader(new InputStreamReader(System.in));
