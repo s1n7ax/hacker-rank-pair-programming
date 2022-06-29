@@ -1,14 +1,14 @@
-import java.io.*;
-import java.math.*;
-import java.security.*;
-import java.text.*;
-import java.util.*;
-import java.util.concurrent.*;
-import java.util.function.*;
-import java.util.regex.*;
-import java.util.stream.*;
-import static java.util.stream.Collectors.joining;
 import static java.util.stream.Collectors.toList;
+
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.IntStream;
+import java.util.stream.Stream;
 
 class Result {
 
@@ -29,7 +29,7 @@ class Result {
             d2 += arr.get(size - 1 - i).get(i);
         }
 
-        return d1 > d2? d1 - d2: d1 < d2? d2 - d1: 0;
+        return d1 > d2 ? d1 - d2 : d1 < d2 ? d2 - d1 : 0;
     }
 
 }
@@ -46,10 +46,9 @@ public class Solution {
         IntStream.range(0, n).forEach(i -> {
             try {
                 arr.add(
-                    Stream.of(bufferedReader.readLine().replaceAll("\\s+$", "").split(" "))
-                        .map(Integer::parseInt)
-                        .collect(toList())
-                );
+                        Stream.of(bufferedReader.readLine().replaceAll("\\s+$", "").split(" "))
+                                .map(Integer::parseInt)
+                                .collect(toList()));
             } catch (IOException ex) {
                 throw new RuntimeException(ex);
             }
