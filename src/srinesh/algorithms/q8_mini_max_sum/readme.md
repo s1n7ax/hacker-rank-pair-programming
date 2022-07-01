@@ -18,7 +18,6 @@ public static void miniMaxSum(List<Integer> arr) {
             .stream()
             .parallel()
             .skip(1)
-            .limit(4)
             .collect(Collectors.summingLong(Integer::intValue));
 
     System.out.printf("%s %s", min, max);
