@@ -27,12 +27,14 @@ class Result {
 
         var appleCount = apples
                 .stream()
+                .parallel()
                 .map(distanceFromA -> distanceFromA + a)
                 .filter(isInHouseRange)
                 .count();
 
         var orangesCount = oranges
                 .stream()
+                .parallel()
                 .map(distanceFromB -> distanceFromB + b)
                 .filter(isInHouseRange)
                 .count();
