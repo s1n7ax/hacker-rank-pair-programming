@@ -2,9 +2,9 @@
 
 ```java
 public static int migratoryBirds(List<Integer> arr) {
-    var c = arr.stream().collect(Collectors.groupingBy(k -> k, Collectors.counting()));
-    
-    return c
+    return arr
+        .stream()
+        .collect(Collectors.groupingBy(k -> k, Collectors.counting()))
         .entrySet()
         .stream()
         .sorted((e1, e2) -> {
@@ -18,7 +18,5 @@ public static int migratoryBirds(List<Integer> arr) {
         })
         .findFirst()
         .get()
-        .getKey();
-
-}
+        .getKey();}
 ```
