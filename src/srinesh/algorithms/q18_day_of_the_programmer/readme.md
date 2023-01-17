@@ -1,5 +1,7 @@
 # [Day of the Programmer](https://www.hackerrank.com/challenges/day-of-the-programmer/problem)
 
+## Rust
+
 ```rust
 fn is_leap(year: i32) -> bool {
     if year < 1918 { year % 4 == 0 }
@@ -16,6 +18,8 @@ fn dayOfProgrammer(year: i32) -> String {
     }
 }
 ```
+
+## Java
 
 ```java
 public static boolean isLeap(int year) {

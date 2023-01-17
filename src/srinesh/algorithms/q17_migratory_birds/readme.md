@@ -1,5 +1,7 @@
 # [Migratory Birds](https://www.hackerrank.com/challenges/migratory-birds/problem)
 
+## Rust
+
 ```rust
 fn migratoryBirds(arr: &[i32]) -> i32 {
     arr.iter()
@@ -23,6 +25,8 @@ fn migratoryBirds(arr: &[i32]) -> i32 {
         .0
 }
 ```
+
+## Java
 
 ```java
 public static int migratoryBirds(List<Integer> arr) {
