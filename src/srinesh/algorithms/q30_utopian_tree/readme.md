@@ -1,4 +1,4 @@
-# [Designer PDF Viewer](https://www.hackerrank.com/challenges/designer-pdf-viewer/problem)
+# [Utopian Tree](https://www.hackerrank.com/challenges/utopian-tree/problem)
 
 ## Rust
 

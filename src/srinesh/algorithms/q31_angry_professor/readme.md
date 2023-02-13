@@ -1,4 +1,4 @@
-# [Designer PDF Viewer](https://www.hackerrank.com/challenges/designer-pdf-viewer/problem)
+# [Angry Professor](https://www.hackerrank.com/challenges/angry-professor/problem)
 
 ## Rust
 
